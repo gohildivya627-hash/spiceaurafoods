@@ -3,60 +3,92 @@
 <head>
 <title>Spice Aura | Coming Soon</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
-body {
+* {
   margin: 0;
   padding: 0;
-  font-family: Georgia, serif;
-  background: url('cover.jpg') no-repeat center center fixed;
-  background-size: cover;
-  text-align: center;
-  color: #5a3e2b;
+  box-sizing: border-box;
 }
 
-.overlay {
-  background: rgba(255,255,255,0.85);
+body {
+  font-family: Georgia, serif;
   height: 100vh;
+  background: url('cover.jpg') no-repeat center center;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  color: white;
 }
 
-h1 {
-  font-size: 48px;
-  margin-bottom: 10px;
+/* Dark luxury overlay */
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.55);
+}
+
+/* Content container */
+.content {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 60px;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 .tagline {
   font-style: italic;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  font-size: 20px;
 }
 
-.coming {
-  font-size: 20px;
-  margin-top: 15px;
-  letter-spacing: 2px;
+.launch {
+  margin-top: 30px;
+  font-size: 22px;
+  letter-spacing: 3px;
 }
 
 .contact {
-  margin-top: 30px;
+  margin-top: 40px;
   font-size: 16px;
+  line-height: 1.8;
+}
+
+@media(max-width:768px){
+  .logo{
+    font-size: 40px;
+  }
+  .launch{
+    font-size: 18px;
+  }
 }
 </style>
 </head>
 
 <body>
-<div class="overlay">
-  <h1>Spice Aura</h1>
+
+<div class="overlay"></div>
+
+<div class="content">
+  <div class="logo">Spice Aura</div>
   <div class="tagline">The Essence of Real Spices</div>
-  <div class="coming">WEBSITE LAUNCHING SOON</div>
+
+  <div class="launch">WEBSITE LAUNCHING SOON</div>
 
   <div class="contact">
-    info@spiceaurafoods.com<br>
-    +1 289 952 6201<br>
+    info@spiceaurafoods.com <br>
+    +1 289 952 6201 <br>
     www.spiceaurafoods.com
   </div>
 </div>
+
 </body>
 </html>
